@@ -28,8 +28,12 @@ header {
 header h2 {
     font-size: 350%;
     padding-top: 12px;
+} 
+header h2 a {
+    text-decoration: none;
+    color: black;
     text-shadow: 5px 5px 20px white, -5px 5px 20px white, 5px -5px 20px white, -5px -5px 20px white;
-}   
+}  
 #logoimage {
     max-width: 100px;
     width: 100%;
