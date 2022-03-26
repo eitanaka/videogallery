@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.clerfix ::after {
+    content:"";
+    clear: both;
+    display: table;
+}
+html {
+    background-image: url("../iamge/backgroundimage.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+body {
+    font-family: 'Righteous', cursive;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+header {
+    background-color: white;
+    background-image: linear-gradient(to right, yellow, green, blue, red);
+    padding: 2em 0;
+    border-bottom: 5px ridge white;
+}
+header h2 {
+    font-size: 350%;
+    padding-top: 12px;
+    text-shadow: 5px 5px 20px white, -5px 5px 20px white, 5px -5px 20px white, -5px -5px 20px white;
+}   
+#logoimage {
+    max-width: 100px;
+    width: 100%;
+    float: left;
+    margin:0 2em;
+}
+
+main {
+    display: flex;
+}
+
+#nav_list {
+    flex-basis: 15%;
+    margin: 3em 0 0 3em;
+}
+#nav_list ul {
+    list-style: none;
+}
+#nav_list ul li {
+    margin-bottom: 1em; 
+    background-color: #808080;
+    border: 3px ridge white;
+    border-radius: 15px;
+}
+#nav_list ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 5px 1em;
+}
+#nav_list ul li a:visited {
+    color: white;
+}
+#nav_list ul li a:hover {
+    color: maroon;
+    background-color: #ffff99;
+    border-radius: 15px;
+}
+
+section {
+    flex-basis: 75%;
+    margin: 2em auto;
+}
+
+article {
+    width: 75%;
+    border: 3px solid white;
+    background-color: maroon;
+    margin-bottom: 1.5em    ;
+    padding: 30px auto;
+    border-radius: 15px;
+}
+
+article h4 {
+    font-size: 150%;
+    color: white;
+    padding: 15px 0 15px 1em;
+}
+
+.videowrapper {
+    width: 75%;
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+    margin: 1em auto;
+    border: 6px ridge #808080;
+}
+.videowrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    clear: both;
+    background-color: white;
+    background-image: linear-gradient(to left, yellow, green, blue, red);
+    padding: 2em 0;
+    border-top: 3px ridge white;
+}
+
+footer p {
+    text-align: center;
+    font-size: 80%;
+    color: white;
+}
+footer img {
+    max-width: 80px;
+    display: block;
+    margin: .5em auto;
+}
