@@ -21,15 +21,17 @@
         <a href="index.html"><img id="logoimage" src="iamge/cplogo.gif"></a>
         <h2><a href="index.html">Coldplay Vids</a></h2>
     </header>
-    <main>
-        <nav id="nav_list">
-            <ul>
-                <li><a href="#vid1">Paradice</a></li>
-                <li><a href="#vid2">Adventure Of A Lifetime</a></li>
-                <li><a href="#vid3">Hymn For The Weekend</a></li>
-            </ul>
+    <nav id="nav_list">
+        <ul>
+            <li><a href="#vid1">Paradice</a></li>
+            <li><a href="#vid2">Adventure Of A Lifetime</a></li>
+            <li><a href="#vid3">Hymn For The Weekend</a></li>
+            <li><a href="#vid4">Yellow</a></li>
+            <li><a href="#vid5">Viva la vida</a></li>
+        </ul>
 
-        </nav>
+    </nav>
+    <main>
         <section>
             <article id="vid1">
                 <h4>Paradice</h4>
@@ -49,7 +51,21 @@
                     <iframe src="https://www.youtube.com/embed/YykjpeuMNEk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </article>
+            <article id="vid4">
+                <h4>Yellow</h4>
+                <div class="videowrapper">
+                    <iframe src="https://www.youtube.com/embed/yKNxeF4KMsY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </article>
+            <article id="vid5">
+                <h4>Viva la vida</h4>
+                <div class="videowrapper">
+                    <iframe src="https://www.youtube.com/embed/dvgZkm1xWPE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </article>
         </section>
+        <div><button onclick="topFunction()" id="cornerbtn" title="Go to top">Return To Top</button>
+        </div>
     </main>
     <footer>
         <p>&copy; 2022 Ei Tanaka Productions</p>
@@ -57,3 +73,22 @@
     </footer>
 </body>
 </html>
+
+<script>
+    // When the user scrolls down 800px from the top of the document, show the button
+     window.onscroll = function() {scrollFunction()};
+ 
+     function scrollFunction() {
+       if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+         document.getElementById("cornerbtn").style.display = "block";
+       } else {
+         document.getElementById("cornerbtn").style.display = "none";
+       }
+     }
+ 
+     // When the user clicks on the button, scroll to the top of the document
+     function topFunction() {
+       document.body.scrollTop = 0;
+       document.documentElement.scrollTop = 0;
+     }
+ </script>
